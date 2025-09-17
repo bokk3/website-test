@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Boris Truyens Blog - Music Production, Studio Engineering, and Creative Technology">
+<meta property="og:title" content="Blog - Boris Truyens">
+<meta property="og:description" content="Thoughts and insights on music production, studio engineering, and creative technology">
+<meta property="og:image" content="https://truyens.pro/og-image.jpg">
+<meta property="og:url" content="https://truyens.pro/blog">
+<title>Blog - Boris Truyens</title>
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<!-- Navbar -->
+<nav class="navbar" role="navigation">
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/studio-live">Live Studio</a></li>
+    <li><a href="/slots">Slots</a></li>
+    <li><a href="/blog" class="active">Blog</a></li>
+    <li><a href="/#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<main id="main-content">
+<!-- Blog Header -->
+<header class="blog-header">
+  <div class="header-content">
+    <h1>Blog</h1>
+    <p>Thoughts and insights on music production, studio engineering, and creative technology</p>
+  </div>
+</header>
+
+<!-- Blog Grid -->
+<section class="blog-grid section">
+  <div class="blog-controls">
+    <div class="search-container">
+      <input type="search" id="blogSearch" placeholder="Search articles..." aria-label="Search blog posts">
+      <button class="search-btn">
+        <svg viewBox="0 0 24 24" width="20" height="20">
+          <path fill="currentColor" d="M15.5 14h-.79l-.28-.27a6.5 6.5 0 1 0-.7.7l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0A4.5 4.5 0 1 1 14 9.5 4.5 4.5 0 0 1 9.5 14z"/>
+        </svg>
+      </button>
+    </div>
+    <div class="categories">
+      <button class="category-btn active" data-category="all">All</button>
+      <button class="category-btn" data-category="production">Production</button>
+      <button class="category-btn" data-category="studio">Studio</button>
+      <button class="category-btn" data-category="tech">Tech</button>
+    </div>
+  </div>
+  
+  <div class="blog-posts" id="blogPosts">
+    <!-- Blog posts will be dynamically inserted here -->
+  </div>
+</section>
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+  <p>Follow me: <a href="#">Instagram</a> | <a href="#">YouTube</a> | <a href="#">SoundCloud</a></p>
+  <p>© 2025 Boris Truyens</p>
+</footer>
+
+<script src="/script.js"></script>
+<script src="/js/blog.js"></script>
+</body>
+</html>

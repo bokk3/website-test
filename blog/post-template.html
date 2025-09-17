@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="{{description}}">
+<meta property="og:title" content="{{title}} - Boris Truyens Blog">
+<meta property="og:description" content="{{description}}">
+<meta property="og:image" content="{{image}}">
+<meta property="og:url" content="https://truyens.pro/blog/{{slug}}">
+<title>{{title}} - Boris Truyens Blog</title>
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<!-- Navbar -->
+<nav class="navbar" role="navigation">
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/studio-live">Live Studio</a></li>
+    <li><a href="/slots">Slots</a></li>
+    <li><a href="/blog">Blog</a></li>
+    <li><a href="/#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<main id="main-content">
+<article class="blog-post">
+  <header class="post-header">
+    <div class="post-meta">
+      <span class="category">{{category}}</span>
+      <time datetime="{{date}}">{{formatDate}}</time>
+    </div>
+    <h1>{{title}}</h1>
+    <div class="post-info">
+      <img src="/assets/images/avatar.jpg" alt="Boris Truyens" class="author-avatar">
+      <div class="author-info">
+        <span class="author-name">Boris Truyens</span>
+        <span class="read-time">{{readTime}} min read</span>
+      </div>
+    </div>
+  </header>
+
+  <div class="post-content">
+    {{content}}
+  </div>
+
+  <footer class="post-footer">
+    <div class="tags">
+      {{#tags}}
+      <span class="tag">{{.}}</span>
+      {{/tags}}
+    </div>
+    
+    <div class="share-buttons">
+      <button onclick="share('twitter')">Share on Twitter</button>
+      <button onclick="share('linkedin')">Share on LinkedIn</button>
+    </div>
+
+    <div class="post-nav">
+      {{#previousPost}}
+      <a href="{{url}}" class="prev-post">← {{title}}</a>
+      {{/previousPost}}
+      {{#nextPost}}
+      <a href="{{url}}" class="next-post">{{title}} →</a>
+      {{/nextPost}}
+    </div>
+  </footer>
+</article>
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+  <p>Follow me: <a href="#">Instagram</a> | <a href="#">YouTube</a> | <a href="#">SoundCloud</a></p>
+  <p>© 2025 Boris Truyens</p>
+</footer>
+
+<script src="/script.js"></script>
+<script src="/js/blog.js"></script>
+</body>
+</html>
