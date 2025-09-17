@@ -3,13 +3,24 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Boris Truyens - Music producer, studio engineer and creative technologist">
+<meta name="keywords" content="music, studio, production, technology, live streaming">
+<meta property="og:title" content="Boris Truyens | Studio & Portfolio">
+<meta property="og:description" content="Music, Studio, Creativity & Tech">
+<meta property="og:image" content="https://yoursite.com/og-image.jpg">
+<meta property="og:url" content="https://yoursite.com">
 <title>Boris Truyens | Studio & Portfolio</title>
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preload" href="style.css" as="style">
+<link rel="preload" href="script.js" as="script">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
 
 <!-- Navbar -->
-<nav class="navbar">
+<nav class="navbar" role="navigation">
   <ul>
     <li><a href="#live">Live</a></li>
     <li><a href="#projects">Projects</a></li>
@@ -19,6 +30,7 @@
 </nav>
 
 <!-- Hero Section -->
+<main id="main-content">
 <header class="hero">
   <div class="hero-content">
     <h1>Boris Truyens</h1>
@@ -31,7 +43,7 @@
   <h2>🎥 Studio Live</h2>
   <div class="live-status" id="liveStatus">Checking stream...</div>
   <div class="video-container">
-    <iframe src="http://raspberrypi:8080/?action=stream" frameborder="0" allowfullscreen></iframe>
+    <iframe src="https://raspberrypi:8080/?action=stream" loading="lazy" frameborder="0" allowfullscreen></iframe>
   </div>
 </section>
 
@@ -54,8 +66,38 @@
 <!-- Contact Section -->
 <section id="contact" class="section">
   <h2>📬 Contact</h2>
-  <p>Email: <a href="mailto:boris@example.com">boris@example.com</a></p>
+  <form id="contactForm" action="/submit" method="POST">
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+    <div class="form-group">
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
+    </div>
+    <button type="submit">Send Message</button>
+  </form>
 </section>
+</main>
+
+<!-- Schema.org markup -->
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "Person",
+    "name": "Boris Truyens",
+    "url": "https://yoursite.com",
+    "sameAs": [
+        "https://instagram.com/youraccount",
+        "https://youtube.com/yourchannel",
+        "https://soundcloud.com/youraccount"
+    ]
+}
+</script>
 
 <!-- Footer -->
 <footer class="footer">
