@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Boris Truyens - Live Studio Stream">
+<meta property="og:title" content="Studio Live Stream - Boris Truyens">
+<meta property="og:description" content="Watch the live studio stream">
+<meta property="og:image" content="https://truyens.pro/og-image.jpg">
+<meta property="og:url" content="https://truyens.pro/studio-live">
+<title>Studio Live Stream - Boris Truyens</title>
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preload" href="style.css" as="style">
+<link rel="preload" href="script.js" as="script">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<!-- Navbar -->
+<nav class="navbar" role="navigation">
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/slots">Slots</a></li>
+    <li><a href="/#projects">Projects</a></li>
+    <li><a href="/#music">Music</a></li>
+    <li><a href="/#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<main id="main-content">
+<!-- Live Stream Section -->
+<section id="live" class="section fullwidth-section">
+  <h1>🎥 Studio Live Stream</h1>
+  <div class="live-status" id="liveStatus">Checking stream...</div>
+  <div class="video-container">
+    <iframe src="https://raspberrypi:8080/?action=stream" loading="lazy" frameborder="0" allowfullscreen></iframe>
+  </div>
+  <div class="stream-info">
+    <h2>About the Stream</h2>
+    <p>Welcome to my live studio stream! Here you can watch me work on various music projects in real-time.</p>
+    <p>The stream is available 24/7, but I'm typically in the studio during these hours:</p>
+    <ul>
+      <li>Monday - Friday: 10:00 - 18:00 CET</li>
+      <li>Weekend: Various times</li>
+    </ul>
+  </div>
+</section>
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+  <p>Follow me: <a href="#">Instagram</a> | <a href="#">YouTube</a> | <a href="#">SoundCloud</a></p>
+  <p>© 2025 Boris Truyens</p>
+</footer>
+
+<!-- Scripts -->
+<script src="script.js"></script>
+</body>
+</html>
